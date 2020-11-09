@@ -1,0 +1,19 @@
+/* Color Theme Swatches in Hex */
+$custom1: #03275a;
+$custom2: rgb(95, 98, 120);
+$custom3: rgb(41, 41, 41);
+$custom4: #f34605;
+
+// Custom variables and variable overwrites
+$global-link-color: $custom3;
+$global-link-hover-color: $custom3;
+$global-emphasis-color: $custom4;
+$global-muted-color: $custom2;
+$global-primary-background: $custom1 !default;
+
+// Import default variables and available mixins
+@import "uikit/src/scss/variables-theme.scss";
+@import "uikit/src/scss/mixins-theme.scss";
+
+// Import UIkit
+@import "uikit/src/scss/uikit-theme.scss";

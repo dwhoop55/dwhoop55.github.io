@@ -7,7 +7,7 @@
       <intro />
     </container>
 
-    <container id="overview" expanded color="muted">
+    <container id="overview" expanded background-image-class="overview-image">
       <overview />
     </container>
 
@@ -69,3 +69,9 @@ export default {
   },
 };
 </script>
+
+<style>
+.overview-image {
+  background-image: url("~@/assets/overview_bg.jpg");
+}
+</style>

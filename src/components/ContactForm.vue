@@ -20,7 +20,7 @@
         <input
           v-model="email"
           class="uk-input"
-          type="text"
+          type="email"
           placeholder="An email I can reply to"
         />
       </div>

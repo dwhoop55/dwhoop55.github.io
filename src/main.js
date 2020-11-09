@@ -2,6 +2,11 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 
+import './main.scss'
+import UIkit from 'uikit';
+import Icons from 'uikit/dist/js/uikit-icons';
+UIkit.use(Icons);
+
 Vue.config.productionTip = false
 
 const files = require.context('./', true, /\.vue$/i)
