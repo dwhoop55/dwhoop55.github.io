@@ -1,6 +1,12 @@
 import Vue from 'vue'
 import App from './App.vue'
-import router from './router'
+// import router from './router'
+
+import { init } from 'emailjs-com';
+init("user_voLR1vVQmxZdTR60eeMkw");
+
+import i18n from './i18n'
+
 
 import './main.scss'
 import UIkit from 'uikit';
@@ -21,6 +27,7 @@ files.keys().map(key =>
 )
 
 new Vue({
-  router,
+  i18n,
+  // router,
   render: h => h(App)
 }).$mount('#app')

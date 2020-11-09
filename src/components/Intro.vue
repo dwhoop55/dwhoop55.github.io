@@ -16,7 +16,7 @@
         class="uk-margin uk-padding uk-width-expand"
         uk-scrollspy="target: > *; cls:uk-animation-slide-right-small; offset-top: -200"
       >
-        <h1 class="uk-text-bolder">Hi, I'm Florian!</h1>
+        <h1 class="uk-text-bolder">{{ $t("intro.hello") }}</h1>
         <p>
           I'm a computer science graduate and love working in designing and
           building high-performance backbone and wireless networks with

@@ -54,19 +54,6 @@
 <script>
 export default {
   name: "Home",
-  watch: {
-    $route: {
-      immediate: true,
-      handler: function (newVal, oldVal) {
-        this.showModal = newVal.meta && newVal.meta.showModal;
-      },
-    },
-  },
-  data() {
-    return {
-      showModal: false,
-    };
-  },
 };
 </script>
 

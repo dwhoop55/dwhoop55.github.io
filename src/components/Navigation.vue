@@ -31,6 +31,11 @@
             <li>
               <a href="" uk-icon="icon: twitter"></a>
             </li>
+            <li>
+              <a @click="toggleLocale()" uk-icon="icon: world">
+                <span style="margin-right: 5px"> {{ $i18n.locale }} </span>
+              </a>
+            </li>
           </ul>
         </div>
         <div class="uk-navbar-right">
@@ -97,6 +102,17 @@
           <li>
             <a class="uk-text-large" uk-icon="icon: twitter"></a>
           </li>
+          <li>
+            <a
+              class="uk-text-large"
+              @click="toggleLocale()"
+              uk-icon="icon: world"
+            >
+              <span style="margin-right: 5px">
+                {{ $i18n.locale }}
+              </span>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -106,6 +122,14 @@
 <script>
 export default {
   name: "Navigation",
+  methods: {
+    toggleLocale() {
+      var newLocale = this.$i18n.locale == "de" ? "en" : "de";
+      console.log(newLocale, this.$i18n.locale);
+      this.$i18n.locale = newLocale;
+      window.localStorage.setItem("locale", newLocale);
+    },
+  },
 };
 </script>
 
