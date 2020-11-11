@@ -125,7 +125,6 @@ export default {
   methods: {
     toggleLocale() {
       var newLocale = this.$i18n.locale == "de" ? "en" : "de";
-      console.log(newLocale, this.$i18n.locale);
       this.$i18n.locale = newLocale;
       window.localStorage.setItem("locale", newLocale);
     },

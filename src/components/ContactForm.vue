@@ -84,7 +84,11 @@ export default {
       this.failed = false;
       // console.log("sending");
       emailjs
-        .send("service_a4dh45e", "template_f4svpga", this.form)
+        .send(
+          process.env.EMAILJS_SERVICE_ID,
+          process.env.EMAILJS_TEMPLATE_ID,
+          this.form
+        )
         .then((response) => {
           // console.log("sent!");
           this.sent = true;
